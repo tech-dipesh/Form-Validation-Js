@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Check Selected Option</title>
+</head>
+<body>
+
+<select id="mySelect">
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+  <option value="option3">Option 3</option>
+</select>
+<p id="result"></p>
+
+<script>
+  const selectElement = document.getElementById('mySelect');
+  const resultParagraph = document.getElementById('result');
+
+  selectElement.addEventListener('change', function() {
+    console.log(selectElement, selectElement[selectElement.selectedIndex]);
+    const selectedOption = selectElement.options[selectElement.selectedIndex];
+    resultParagraph.textContent = `You selected: ${selectedOption.textContent} (Value: ${selectedOption.value})`;
+  });
+</script>
+
+</body>
+</html>
