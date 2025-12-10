@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Authentication:</title>
+  <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+   <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <br>
+    <form>
+      <label for="fName">First Name</label>
+      <input type="text" placeholder="First Name" name="fName" id="fName">
+      <span id="fname-error">Please enter valid First name.</span>
+      <br>
+      <br>
+      <label for="lName">Last Name</label>
+      <input type="text" placeholder="Last Name" name="lName" id="lName">
+      <span id="lname-error">Please enter valid Last name.</span>
+      <br>
+      <br>
+
+      <label for="Email">Email</label>
+      <input type="email" placeholder="Valid Email" minlength="4" max="100" name="Email" id="Email">
+      <span id="email-error">Please enter valid Email.</span>
+      <br>
+      <br>
+
+      <label for="Age">Age</label>
+      <input type="number" placeholder="Number" min="14" max="100" name="Age" id="Age">
+      <span id="number-error">Please enter valid Age.</span>
+      <br>
+      <br>
+
+      <label for="Hometown">Hometown</label>
+      <input type="text" placeholder="Hometown" id="HomeTown">
+      <span id="hometown-error">Please enter valid Hometown</span>
+      <br>
+      <br>
+
+      <label for="Occupation">Occupation</label>
+      <input type="text" name="Occupation" id="Occupation" placeholder="Enter Your Occupation:">
+      <span id="occup-error">Please enter valid Occupation.<i class="fa-solid fa-circle-check"
+          style="color: #2e8b57;"></i></span>
+      <br>
+      <br>
+      <button type="button" id="btn">Submit</button>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>

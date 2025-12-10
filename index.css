@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #007bff 0%, #667eea 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+form {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: border 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+span {
+  display: none;
+  color: #e74c3c;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  cursor: pointer;
+  background-color: #667eea;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  padding: 14px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #5568d3;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* This is for the mobiel friendly, */
+@media (max-width: 768px) {
+  form {
+    padding: 25px;
+    margin: 30px auto;
+  }
+  
+  label {
+    font-size: 15px;
+  }
+  
+  input {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    padding: 20px;
+  }
+  
+  button {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
